@@ -1,0 +1,21 @@
+{
+  "name": "everything-claude-code",
+  "version": "0.1.0",
+  "description": "Complete collection of battle-tested Claude Code configs - agents, skills, hooks, and rules evolved over 10+ months of intensive daily use",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://github.com/affaan-m/everything-claude-code",
+  "repository": "https://github.com/affaan-m/everything-claude-code",
+  "license": "MIT",
+  "installed": true,
+  "installedAt": "2026-03-20T00:00:00.000Z",
+  "components": {
+    "commands": "../../../commands",
+    "agents": "../../../agents",
+    "skills": "../../../skills",
+    "rules": "../../../rules",
+    "hooks": "../../../hooks"
+  }
+}
