@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vela Riyadh - VIP Concierge</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#06f1f9",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#050811",
+                        "surface": "rgba(255, 255, 255, 0.04)",
+                        "border-glass": "rgba(255, 255, 255, 0.1)",
+                        "muted": "#64748B",
+                        "accent": "#D4AF37",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Outfit", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'glow-primary': '0 0 20px rgba(6, 241, 249, 0.2)',
+                        'glow-accent': '0 0 20px rgba(212, 175, 55, 0.2)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #050811;
+            color: #E2E8F0;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Background Ambient Glow -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[30%] bg-accent/10 blur-[100px] rounded-full"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/5 blur-[120px] rounded-full"></div>
+</div>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col z-10 w-full max-w-md mx-auto relative pb-24">
+<!-- Header / Nav -->
+<div class="flex items-center justify-between p-4 sticky top-0 z-50 glass-panel border-b-0 border-x-0 border-t-0 rounded-none bg-[#050811]/80 backdrop-blur-xl">
+<button aria-label="Menu" class="flex size-12 shrink-0 items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
+</button>
+<h1 class="text-white text-lg font-bold leading-tight tracking-wide flex-1 text-center font-display uppercase text-accent">Concierge</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center size-12 text-white relative">
+<span class="material-symbols-outlined" style="font-size: 24px;">notifications</span>
+<span class="absolute top-3 right-3 w-2 h-2 bg-accent rounded-full shadow-glow-accent"></span>
+</button>
+</div>
+</div>
+<!-- Hero Banner -->
+<div class="px-4 py-6 relative">
+<div class="h-[200px] rounded-2xl overflow-hidden relative shadow-glow-accent group">
+<!-- Abstract dark gold background -->
+<div class="absolute inset-0 bg-gradient-to-br from-[#1a1505] via-[#2a220a] to-[#050811] z-0"></div>
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1617195920950-1145bf9a9c72?q=80&amp;w=2938&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-30 mix-blend-overlay z-0" data-alt="Luxurious dark architectural details"></div>
+<!-- Gold Accent Gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#050811] via-transparent to-accent/20 z-10"></div>
+<!-- Content -->
+<div class="absolute inset-0 z-20 flex flex-col justify-end p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent" style="font-size: 20px; font-variation-settings: 'FILL' 1;">verified</span>
+<p class="text-accent text-sm font-bold tracking-widest uppercase font-display">VIP Fast-Track Active</p>
+</div>
+<h2 class="text-white text-2xl font-bold font-display leading-tight mb-1">Welcome back, Executive.</h2>
+<p class="text-muted text-sm font-body">Your premium bypass network is standing by.</p>
+</div>
+</div>
+</div>
+<!-- Service Cards Masonry Grid -->
+<div class="px-4 flex flex-col gap-6 pb-8">
+<!-- Service Card 1 -->
+<div class="glass-panel rounded-2xl overflow-hidden flex flex-col relative group">
+<div class="h-40 relative overflow-hidden">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dark underground premium parking garage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKZn-tdL4t4I2-_WYIQHpZGsAYhP7fUUhQCylTLkwzeDgfjGqVdf8hyTkyntDzffHsU_tRZNJXJp-3RUsUoTM_iy23_QbdVspzjUW4fMXzBF51TP-CuzNELj0eH-HvAyziS0T4yl5dZETfzMH5k9hj569iXOPdSlWZX9GaXE3zC2QmTEGHJOiOrpqYUkb3y4YU9T4cypd-eQmfXc6Bz8D0xq90Mhh0N_j9sFMM2O3rU7eZ2JjT3gGAOYDTn88fZp--Ffrqfdp0dr4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050811] to-transparent"></div>
+<div class="absolute top-4 left-4 border border-accent rounded-full px-3 py-1 bg-[#050811]/60 backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-accent" style="font-size: 14px;">diamond</span>
+<span class="text-accent text-[10px] font-bold tracking-widest uppercase font-display">Elite Only</span>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-4 z-10 -mt-6">
+<div>
+<h3 class="text-white text-xl font-bold font-display mb-1">Book KAFD Priority Parking</h3>
+<p class="text-muted text-sm leading-relaxed">Secure your spot in the VIP underground sector. Direct elevator access to main towers.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-1 text-sm text-white">
+<span class="material-symbols-outlined text-muted" style="font-size: 16px;">distance</span>
+<span>2.4 km away</span>
+</div>
+<div class="text-accent font-bold font-display tracking-wide">
+                            150 SAR
+                        </div>
+</div>
+<button class="w-full h-14 bg-accent text-black font-display font-bold text-[15px] tracking-widest uppercase rounded-xl mt-2 shadow-glow-accent transition-transform active:scale-[0.98]">
+                        Reserve Now
+                    </button>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="glass-panel rounded-2xl overflow-hidden flex flex-col relative group">
+<div class="h-40 relative overflow-hidden">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury car door opening at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Zsb9nKm-iPZ-Co9GWDgPPBQkBRUg-MWTWsRLjwzDlL--A6aT4AlXldlHz6G26_sJCDLJbRFthQkiogfCiGJn5RniFViSSHGir6isAYAiJ9_qUH790pBYKaw8DryqufShG-MeP4sbhZjJWgqSQiW_Vx6TtBUix0zfAf0eFhKofABZh43wWMwXlfU-Lq3NcL3BPvliEa443upGBX2br2QseN-9kCaMO-CjYHXSjFLuQc34ZMbn2ufRLcTTjZ3xTPdueP2OkLtKplU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050811] to-transparent"></div>
+<div class="absolute top-4 left-4 border border-accent rounded-full px-3 py-1 bg-[#050811]/60 backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-accent" style="font-size: 14px;">star</span>
+<span class="text-accent text-[10px] font-bold tracking-widest uppercase font-display">Premium</span>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-4 z-10 -mt-6">
+<div>
+<h3 class="text-white text-xl font-bold font-display mb-1">Request Valet Meet</h3>
+<p class="text-muted text-sm leading-relaxed">Curbside drop-off with immediate vehicle securement at Kingdom Centre.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-1 text-sm text-white">
+<span class="material-symbols-outlined text-primary" style="font-size: 16px;">schedule</span>
+<span>Ready in 5m</span>
+</div>
+<div class="text-accent font-bold font-display tracking-wide">
+                            200 SAR
+                        </div>
+</div>
+<button class="w-full h-14 bg-accent text-black font-display font-bold text-[15px] tracking-widest uppercase rounded-xl mt-2 shadow-glow-accent transition-transform active:scale-[0.98]">
+                        Request Valet
+                    </button>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="glass-panel rounded-2xl overflow-hidden flex flex-col relative group">
+<div class="h-40 relative overflow-hidden">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Blurred traffic lights at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxzuLHiCdgth6mD0TmeWjFdey2u0ibUOn5aJkH0w015QHHKjMYqLAw5j9A05qFFOYZ2KABNpUBPyNIJmB_fI9tunTB598bBj3lGrXYAM-gRKhHJEegk60MmRfaAG5iR8LFU4SIaH0vu1OzNx6s_IqXb1auQUZG0CL0B9GRukb_vW9AGFr4A5nwawqEUAA3vMo9w-QKC3uIxXgvcXXmejmI6gY_BsxckG2_gobqi-BmLKtK7Uqy1Dut4ARrmqtxOaWHo57wuRTGBsk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050811] to-transparent"></div>
+</div>
+<div class="p-5 flex flex-col gap-4 z-10 -mt-6">
+<div>
+<h3 class="text-white text-xl font-bold font-display mb-1">Pre-pay Toll Lane</h3>
+<p class="text-muted text-sm leading-relaxed">Unrestricted access to the King Fahd bypass lane. Bypasses 18 min of congestion.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-1 text-sm text-white">
+<span class="material-symbols-outlined text-primary" style="font-size: 16px;">speed</span>
+<span>Save 18m</span>
+</div>
+<div class="text-accent font-bold font-display tracking-wide">
+                            50 SAR
+                        </div>
+</div>
+<button class="w-full h-14 bg-accent text-black font-display font-bold text-[15px] tracking-widest uppercase rounded-xl mt-2 shadow-glow-accent transition-transform active:scale-[0.98]">
+                        Purchase Pass
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar (Shared Component - Literal Match) -->
+<div class="fixed bottom-0 left-0 w-full z-40 max-w-md left-1/2 -translate-x-1/2">
+<div class="flex gap-2 border-t border-[rgba(255,255,255,0.1)] bg-[#050811]/90 backdrop-blur-xl px-4 pb-6 pt-3">
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-muted hover:text-white transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-size: 24px;">square</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-display">Dashboard</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-muted hover:text-white transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-size: 24px;">map</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-display">Map</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-muted hover:text-white transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-size: 24px;">show_chart</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-display">Vault</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-accent" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-size: 24px; font-variation-settings: 'FILL' 1;">crown</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-display">VIP</p>
+</a>
+</div>
+</div>
+<!-- Hidden Payment Bottom Sheet (Visual Only for static HTML) -->
+<div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden flex-col justify-end opacity-0 transition-opacity">
+<div class="bg-[#0B0F19] w-full max-w-md mx-auto rounded-t-3xl border-t border-[rgba(255,255,255,0.1)] p-6 pb-12 transform translate-y-full transition-transform">
+<div class="w-12 h-1.5 bg-muted/30 rounded-full mx-auto mb-8"></div>
+<h3 class="text-white text-2xl font-bold font-display mb-2 text-center">Confirm Reservation</h3>
+<p class="text-muted text-center mb-8">KAFD Priority Parking - 150 SAR</p>
+<div class="flex flex-col gap-4">
+<!-- Apple Pay -->
+<button class="w-full h-14 bg-white text-black rounded-xl flex items-center justify-center gap-2 font-semibold text-lg hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">account_balance_wallet</span>
+                    Apple Pay
+                </button>
+<!-- STC Pay (Simulated with generic card icon) -->
+<button class="w-full h-14 glass-panel text-white rounded-xl flex items-center justify-center gap-2 font-semibold text-lg hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[#4E2B88]" style="font-size: 24px;">credit_card</span>
+                    STC Pay
+                </button>
+</div>
+</div>
+</div>
+</body></html>
